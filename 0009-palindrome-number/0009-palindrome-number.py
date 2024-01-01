@@ -5,7 +5,8 @@ class Solution:
         else:
             x = str(x)
             start = 0
-            while start!=len(x)-1-start and  len(x)-1-start> start:
+            end = len(x)-1
+            while start!=end-start and  end-start> start:
                 if x[start] != x[len(x)-1-start]:
                     return False
                 else:
